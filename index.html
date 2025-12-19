@@ -1,26 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Communiqué IIT Kharagpur</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communiqué</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            position: absolute; /* Non-sticky, stays at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            box-sizing: border-box;
+            
+            /* RESTORED: White Fade-out Background */
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            /* RESTORED: Blue Brand Text */
+            color: #002b49; 
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            /* RESTORED: Your original Blue Links */
+            color: #0056b3; 
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00a8e8; /* Slightly lighter blue on hover */
+        }
+
+        /* Ensuring section headings aren't hidden when jumping to them */
+        section {
+            scroll-margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
 
-  <header class="navbar">
-    <h1>Communiqué</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Gallery</a>
-      <a href="#">Events</a>
-      <a href="#">FAQs</a>
-    </nav>
-  </header>
+    <header class="navbar">
+      <div class="nav-left">
+        <img src="assets/images/logo.jpg" alt="Communiqué Logo" class="logo">
+        <span class="brand">Communiqué</span>
+      </div>
 
-  <section class="hero">
-    <h2>Official Soft Skills Society of IIT Kharagpur</h2>
-    <p>Helping students grow through communication and professional development</p>
-  </section>
+      <nav class="nav-links">
+        <a href="#">HOME</a>
+        <a href="#competencies">CORE COMPETENCIES</a>
+        <a href="#vision-mission">OUR VISION</a>
+        <a href="#executive-team">EXECUTIVE TEAM</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Communiqué IIT Kharagpur</h1>
+            <p>The Official Soft Skills & Personality Development Society</p>
+        </div>
+
+        <div class="wave-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <section id="competencies" class="competencies-section">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="competencies-container">
+            <div class="comp-card">
+                <div class="comp-icon">💬</div>
+                <h3>Communication</h3>
+                <p>Permeating almost every aspect of a job, this skill is often ranked first among employers.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">✨</div>
+                <h3>Enthusiasm & Attitude</h3>
+                <p>Employers value individuals who are adaptable, positive and open to change.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">🤝</div>
+                <h3>Teamwork</h3>
+                <p>Every role involves collaboration. The ability to work effectively with others is essential.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">🧠</div>
+                <h3>Problem Solving</h3>
+                <p>Analyze challenges critically and develop creative, informed solutions.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">🌐</div>
+                <h3>Networking</h3>
+                <p>Building meaningful relationships is a key element of long-term success.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">👔</div>
+                <h3>Professionalism</h3>
+                <p>Professionalism reflects integrity, accountability and responsibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision-mission" class="vision-section">
+        <div class="vision-container">
+            <h2 class="main-title">Our Vision & Mission</h2>
+            <div class="vision-content">
+                <div class="vision-item">
+                    <div class="vision-header">
+                        <span class="vision-icon">👁️</span>
+                        <h3>Vision</h3>
+                    </div>
+                    <p>Recognizing the importance of soft skills in personal and professional life, Communiqué strives to inspire confidence and equip every KG Pian with career-building soft skills.</p>
+                </div>
+                <div class="vision-item">
+                    <div class="vision-header">
+                        <span class="vision-icon">🚀</span>
+                        <h3>Mission</h3>
+                    </div>
+                    <p>We aim to provide customized support to students by serving as an interface between experts and the student body.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="executive-team" class="team-section">
+      <div class="team-header">
+        <h2>EXECUTIVE TEAM</h2>
+        <div class="accent-bar"></div>
+      </div>
+
+      <div class="team-container" id="teamSlider">
+        <div class="member-card">
+          <div class="image-box"><img src="assets/images/Sourav.jpg" alt="President"></div>
+          <div class="member-info">
+            <h3>Saurav Upadhyay</h3>
+            <p class="role">MARKETING AND PUBLIC RELATIONS HEAD</p>
+            <div class="social-links"><a href="#" class="fb">Facebook</a><a href="#" class="ln">LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="image-box"><img src="assets/images/Pritvik.jpg" alt="Vice President"></div>
+          <div class="member-info">
+            <h3>Pritvik Premkumar</h3>
+            <p class="role">EXTERNAL AFFAIRS AND OUTREACH HEAD</p>
+            <div class="social-links"><a href="#" class="fb">Facebook</a><a href="#" class="ln">LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="image-box"><img src="assets/images/Arya.jpg" alt="General Secretary"></div>
+          <div class="member-info">
+            <h3>Arya Dubey</h3>
+            <p class="role">INTERNAL & ALUMNI AFFAIRS HEAD</p>
+            <div class="social-links"><a href="#" class="fb">Facebook</a><a href="#" class="ln">LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="image-box"><img src="assets/images/TejalS.jpg" alt="Treasurer"></div>
+          <div class="member-info">
+            <h3>Tejal Saurabhi</h3>
+            <p class="role">TECHNICAL AFFAIRS AND MUN HEAD</p>
+            <div class="social-links"><a href="#" class="fb">Facebook</a><a href="#" class="ln">LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="image-box"><img src="assets/images/SritomaN.jpg" alt="Technical Head"></div>
+          <div class="member-info">
+            <h3>Sritoma Nandan</h3>
+            <p class="role">DIGITAL PUBLICITY HEAD</p>
+            <div class="social-links"><a href="#" class="fb">Facebook</a><a href="#" class="ln">LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="image-box"><img src="assets/images/DivyanshJ.jpg" alt="Public Relations"></div>
+          <div class="member-info">
+            <h3>Divyansh Jain</h3>
+            <p class="role">EVENTS AND OPERATIONS HEAD</p>
+            <div class="social-links"><a href="#" class="fb">Facebook</a><a href="#" class="ln">LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="image-box"><img src="assets/images/AtharvaD.jpg" alt="Finance Head"></div>
+          <div class="member-info">
+            <h3>Atharva Deshmukh</h3>
+            <p class="role">FINANCE AND SPONSORSHIP HEAD</p>
+            <div class="social-links"><a href="#" class="fb">Facebook</a><a href="#" class="ln">LinkedIn</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="contact-section">
+  <div class="contact-container">
+    
+    <div class="contact-info">
+      <p class="sub-text">GET IN TOUCH</p>
+      <h2>Contact Communiqué</h2>
+      <div class="accent-line"></div>
+      
+      <div class="info-item">
+        <span class="icon">📍</span>
+        <p>IIT Kharagpur, West Bengal, India - 721302</p>
+      </div>
+      
+      <div class="info-item">
+        <span class="icon">✉️</span>
+        <p><a href="mailto:communique@iitkgp.ac.in">communique@iitkgp.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="social-hub">
+      <h3>Follow Our Journey</h3>
+      <p>Stay updated with the latest happenings at IIT Kharagpur.</p>
+      
+      <div class="social-grid">
+        <a href="https://www.facebook.com/communique.iitkgp/" target="_blank" class="social-box fb">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+
+        <a href="https://www.linkedin.com/company/communique-iit-kharagpur/" target="_blank" class="social-box ln">
+          <i class="fab fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://www.instagram.com/communique_iitkgp/" target="_blank" class="social-box ig">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+
+        <a href="https://www.youtube.com/user/CommuniqueIITKGP" target="_blank" class="social-box yt">
+          <i class="fab fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
 
 </body>
 </html>
