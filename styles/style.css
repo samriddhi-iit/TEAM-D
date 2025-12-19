@@ -100,7 +100,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
@@ -117,8 +117,8 @@ nav ul li a:hover {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), 
-                url('https://static.wixstatic.com/media/9553c3_1c205f777e714f3184488615390a28ab~mv2_d_2048_1247_s_2.jpg/v1/fill/w_560,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/9553c3_1c205f777e714f3184488615390a28ab~mv2_d_2048_1247_s_2.jpg'); 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://upload.wikimedia.org/wikipedia/commons/1/1f/Bubai_Manna_%28IIT_Kharagpur_main_building%29.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -137,6 +137,15 @@ nav ul li a:hover {
   font-family: 'Inter', 'Helvetica', sans-serif;
   font-size: 4rem;
   font-weight: 800;
+  letter-spacing: -1px; /* Tighter spacing looks more modern for big headers */
+  margin-bottom: 10px;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+    
+}
+.hero-content p {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
   letter-spacing: -1px; /* Tighter spacing looks more modern for big headers */
   margin-bottom: 10px;
   text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
