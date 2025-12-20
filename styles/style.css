@@ -14,25 +14,24 @@ body {
         }
 
         .navbar {
-            position: absolute; /* Non-sticky, stays at the top */
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5%;
-            box-sizing: border-box;
-            
-            /* RESTORED: White Fade-out Background */
-            background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+           display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  backdrop-filter: blur(5px);
         }
 
         .brand {
             font-size: 1.5rem;
             font-weight: bold;
-            /* RESTORED: Blue Brand Text */
+            
             color: #002b49; 
         }
 
@@ -41,23 +40,24 @@ body {
             margin-left: 25px;
             font-weight: 600;
             font-size: 0.9rem;
-            /* RESTORED: Your original Blue Links */
-            color: #0056b3; 
+    
+            color: #ccdef1; 
             transition: color 0.3s ease;
+            
         }
 
         .nav-links a:hover {
-            color: #00a8e8; /* Slightly lighter blue on hover */
+            color: #00a8e8; 
         }
 
-        /* Ensuring section headings aren't hidden when jumping to them */
+      
         section {
             scroll-margin-top: 50px;
         }
 
 
 
-/* Left logo section */
+
 .nav-left {
   display: flex;
   align-items: center;
@@ -65,13 +65,17 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 40px;
+  margin-right: 5px;
 }
 
 .brand {
-  font-size: 30px;
-  font-weight: 500;
-  color: #0b3a63;
+ 
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 
@@ -137,7 +141,7 @@ nav ul li a:hover {
   font-family: 'Inter', 'Helvetica', sans-serif;
   font-size: 4rem;
   font-weight: 800;
-  letter-spacing: -1px; /* Tighter spacing looks more modern for big headers */
+  letter-spacing: -1px; 
   margin-bottom: 10px;
   text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
     
@@ -146,7 +150,7 @@ nav ul li a:hover {
   font-family: 'Inter', 'Helvetica', sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
-  letter-spacing: -1px; /* Tighter spacing looks more modern for big headers */
+  letter-spacing: -1px; 
   margin-bottom: 10px;
   text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
     
@@ -155,7 +159,7 @@ nav ul li a:hover {
 
 .wave-container {
     position: absolute;
-    bottom: -1px; /* Prevents tiny gap at bottom */
+    bottom: -1px; 
     width: 100%;
     line-height: 0;
 }
@@ -195,25 +199,25 @@ nav ul li a:hover {
 }
 
 
-/* 2. The Title: Ensuring it stays visible on the new background */
+
 .section-title {
     font-size: 2.8rem;
-    color: #f2f3f4; /* Dark blue at first, or change to white if it's lower down */
+    color: #f2f3f4; 
     margin-bottom: 60px;
     font-weight: 800;
     text-align: center;
 }
 
-/* 3. The Grid: Keeping your cards organized */
+
 .competencies-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto; /* Centers the grid */
+    margin: 0 auto; 
 }
 
-/* 4. The Cards: The "Pop" style you liked */
+
 .comp-card {
     background: #ffffff;
     padding: 40px 30px;
@@ -227,23 +231,27 @@ nav ul li a:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
-.comp-icon {
-    font-size: 4.5rem; /* Increased from 3rem to make it much bigger */
-    margin-bottom: 25px;
+
+.comp-card i {
+    font-size: 4.5rem; 
+    margin-bottom: 30px;
     display: block;
     transition: transform 0.3s ease;
 }
 .vision-section {
     padding: 100px 5%;
-    /* Subtle shift in blue to create section separation */
+   
     background: #001a29; 
     color: white;
     text-align: center;
 }
-
+.vision-header i {
+  font-size: 1.8rem;
+  color: #c3e9f7; 
+}
 .main-title {
     font-size: 2.5rem;
-    font-weight: 300; /* Thin font looks very modern */
+    font-weight: 300; 
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 60px;
@@ -414,7 +422,7 @@ nav ul li a:hover {
   color: var(--navy);
 }
 .contact-section {
-  background-color: #001d3d; /* Deep Navy to match your theme */
+  background-color: #001d3d;
   color: white;
   padding: 80px 5%;
   font-family: 'Segoe UI', sans-serif;
@@ -442,7 +450,7 @@ nav ul li a:hover {
 .accent-line {
   width: 50px;
   height: 4px;
-  background: #00b4d8; /* Cyan accent */
+  background: #00b4d8;
   margin-bottom: 30px;
 }
 
@@ -458,39 +466,83 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-/* Social Grid Styling */
-.social-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-top: 25px;
+
+
+
+.main-footer {
+    background-color: #001d3d;
+    color: #eee;
+    padding: 50px 0 20px 0;
+    margin-top: 50px;
+    border-top: 3px solid #333;
 }
 
-.social-box {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 0 40px;
 }
 
-.social-box:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-5px);
-  border-color: #00b4d8;
+.footer-col h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.social-box i {
-  font-size: 1.2rem;
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #bbb;
 }
 
-/* Brand Colors on Hover */
-.fb:hover i { color: #1877f2; }
-.ln:hover i { color: #0077b5; }
-.ig:hover i { color: #e4405f; }
-.yt:hover i { color: #ff0000; }
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+/* Social Link Styling */
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-link:hover {
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    font-size: 0.8rem;
+    color: #555;
+}
